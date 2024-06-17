@@ -14,7 +14,7 @@ login_COOL(driver)
 
 session = requests.session()
 ID_students, students_name = get_students_info(driver, session, course_id)
-print(ID_students)
+#print(ID_students)
 print(students_name)
 
 unit_list = []

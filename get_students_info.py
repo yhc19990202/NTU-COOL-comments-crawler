@@ -19,7 +19,7 @@ def get_students_info(driver, session, course_id):
     session = copy_cookies(session, driver)
     students_json = json.loads( session.get(user_url).text )
     print(students_json)
-    time.sleep(3)
+    time.sleep(1)
     ID_students = dict()
     students_name = dict()
     for student in students_json:
